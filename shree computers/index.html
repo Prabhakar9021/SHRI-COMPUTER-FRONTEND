@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="image/css1/style1.css">
+        <title>shri computer</title>
+    </head>
+<body>
+  <section id="Home">
+  <div class="img"> 
+        <img class="slide"  src="image/first.jpg" width="100%" height="800px">
+        <img class="slide" src="image/2.jpg" width="100%" height="800px">
+        <img class="slide" src="image/1.jpg" width="100%" height="800px">
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+    </div> 
+    
+  
+    <header class="navbar">
+       <h1>Shri's Computers</h1>
+        <ul type="none">
+            <li><div class="drop"><button>Courses</button>
+                    <div class="dropcon">
+                        <a href="https://one5.netlify.app/" target="_blank">Our New Template</a>
+                        <a href="https://mscit.mkcl.org/course-details" target="_blank">Link 1</a>
+                        <a href="https://mscit.mkcl.org/course-details" target="_blank">Link 2</a>
+                        <a href="https://mscit.mkcl.org/course-details" target="_blank">Link 3</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="photos.html" target="_blank">Photos</a></li>
+            <li><a href="#fo">Contact Us</a></li>
+            <li><a href="#ab">About us </a></li>
+        </ul>
+    </header>
+  <div id="" class="img1txt"> 
+    <P><h1>Welcome To Shri's computers</h1></P>
+  
+  </div>
+</section> 
+  <section id="ab"  class="about">
+    <h1> About Us</h1>
+    <p>
+        MS-CIT
+            MS-CIT is an Information Technology (IT) literacy course started by MKCL in the year 2001. It is the most popular IT Literacy course in Maharashtra.In 21st Century, most of the new actionable knowledge is being digitally born (often through digital collaborations), digitally stored, digitally presented, digitally distributed, digitally accessed, digitally archived and managed. It only seems natural that it has become an essential part of one’s personal, professional and social life. It has also transformed the way of living in 21st Century. MS-CIT attempts to propagate it through IT Awareness, Literacy, Functionality and Applicability among the common people with a view to bridge the Digital Divide and the resultant Knowledge Divide and Development Opportunity Divide. This surely makes a positive impact on one’s job-readiness, social behavior and ultimately boosts the self-confidence, enabling him/her to work effectively in the 21st Century workplace.<br>MS-CIT
+            MS-CIT is an Information Technology (IT) literacy course started by MKCL in the year 2001. It is the most popular IT Literacy course in Maharashtra.In 21st Century, most of the new actionable knowledge is being digitally born (often through digital collaborations), digitally stored, digitally presented, digitally distributed, digitally accessed, digitally archived and managed. It only seems natural that it has become an essential part of one’s personal, professional and social life. It has also transformed the way of living in 21st Century. MS-CIT attempts to propagate it through IT Awareness, Literacy, Functionality and Applicability among the common people with a view to bridge the Digital Divide and the resultant Knowledge Divide and Development Opportunity Divide. This surely makes a positive impact on one’s job-readiness, social behavior and ultimately boosts the self-confidence, enabling him/her to work effectively in the 21st Century workplace.
+    </p>
+  </section>
+  <section id="fo"><div  class="footer">
+  <h1>Contact Us</h1>
+ </div>
+ <div  class="regi">
+     <div class="regi1">
+         <input type="text" required="required " placeholder="Full-name">
+         <label>Full-name</label>
+         <input type="text" required="required" placeholder="E-mail">
+         <label>E-mail</label> 
+         <div class="sbtn" >
+             <button type="button">Submit</button>
+         </div> 
+         <div class="stay">
+             <h1>Stay Connected</h1>
+              <a href=""target="_blank"><img src="icons/ph.png" width="20px" height="20px"></a>
+              <a href="https://in.linkedin.com/in/prabhakar-bharkad-1a0994225?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><img src="icons/linkedin.png" width="20px" height="20px"></a>
+              <a href=""target="_blank"><img src="icons/gmail.png" width="20px" height="20px"></a>
+              <a href="https://www.instagram.com/p_bharkad/"target="_blank"><img src="icons/instagram.png" width="20px" height="20px"></a>
+         </div>
+     </div>
+  <div class="regi2">
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+  </div>
+ 
+ </div>
+ <div class="copy">
+     <h1>Copyright © 2036 Best ever Company. All rights reserved. Design: prabhakar bharkad</h1>
+ </div>
+ </section>
+ <div class="chat">
+    <a href="https://wa.me/9021139818" target="_blank">Chat Us</a>
+</div>       
+  <SCRipt>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+  </SCRipt>  
+</body>
+</html>
